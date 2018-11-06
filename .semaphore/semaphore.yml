@@ -10,6 +10,8 @@ blocks:
       jobs:
       - name: requirements
         commands:
+          - pwd
+          - ls -la
           - pip install -r requirements.txt
           - echo "finish install requirements"
   - name: "PEP8 tests"
